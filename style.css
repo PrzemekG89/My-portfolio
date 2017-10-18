@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Poiret+One&amp;subset=latin-ext");
+body {
+  padding-top: 40px;
+  font-family: "Poiret One", cursive; }
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #3EC7C2; }
+
+.jumbotron {
+  background-image: url("https://static.pexels.com/photos/261599/pexels-photo-261599.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  font-family: "Kaushan Script", cursive; }
+  .jumbotron h1 {
+    color: #fff;
+    margin-top: 20vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .jumbotron .watch {
+    color: #fff;
+    margin-top: 15vh;
+    background-color: #3EC7C2;
+    border-bottom: 4px solid #229692; }
+    .jumbotron .watch a {
+      color: #fff;
+      text-decoration: none; }
+      .jumbotron .watch a:hover {
+        background-color: #4fd8d3; }
+
+#oMnie, #coRobie, #projekty, #kontakt {
+  padding: 50px; }
+  #oMnie h2, #coRobie h2, #projekty h2, #kontakt h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    padding-bottom: 35px;
+    text-align: center; }
+    #oMnie h2:after, #coRobie h2:after, #projekty h2:after, #kontakt h2:after {
+      content: "";
+      border-top: 1px solid;
+      display: block;
+      margin: 10px auto;
+      width: 100px; }
+    #oMnie h2 span, #coRobie h2 span, #projekty h2 span, #kontakt h2 span {
+      font-weight: 700; }
+  #oMnie .me, #coRobie .me, #projekty .me, #kontakt .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    #oMnie .me img, #coRobie .me img, #projekty .me img, #kontakt .me img, #oMnie .me .about, #coRobie .me .about, #projekty .me .about, #kontakt .me .about {
+      padding: 20px; }
+    #oMnie .me .about, #coRobie .me .about, #projekty .me .about, #kontakt .me .about {
+      text-align: justify; }
+
+#coRobie {
+  background-color: #3EC7C2; }
+
+#projekty {
+  background-color: #27292B;
+  color: #fff; }
+  #projekty .carousel {
+    height: 120px;
+    margin: 0 auto; }
+
+#kontakt .btn {
+  background-color: #3EC7C2;
+  color: #fff;
+  border-bottom: 4px solid #229692;
+  margin: 20px 0 20px; }
+#kontakt .col-md-6 {
+  padding-right: 40px;
+  padding-left: 40px; }
+#kontakt .cooperation {
+  text-align: justify;
+  margin-bottom: 30px; }
+  #kontakt .cooperation p {
+    line-height: 28px; }
+  #kontakt .cooperation .fa {
+    padding: 10px 10px 0 0;
+    font-size: 28px; }
+
+footer {
+  background-color: #1B1B1B;
+  padding: 20px;
+  color: #fff; }
+  footer .socjals {
+    margin: 20px 0 40px; }
+    footer .socjals a {
+      padding: 20px;
+      font-size: 28px;
+      color: #3ec7c2; }
+
+/*# sourceMappingURL=style.css.map */

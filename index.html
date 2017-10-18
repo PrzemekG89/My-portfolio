@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Przemysław Gałdys Frontend developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="nvbar-brand" href="#">DevEnter.</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expandet="false">
+					<span class="sr-only">Toggle navigation</span>
+                   	<span class="icon-bar"></span> 
+                   	<span class="icon-bar"></span>
+                   	<span class="icon-bar"></span>
+				</button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#oMnie">O mnie</a></li>
+                    <li><a href="#coRobie">Co robię</a></li>
+                    <li><a href="#projekty">Moje projekty</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1>Junior Web Developer</h1>
+            <button class="btn btn-lg watch"><a href="#projekty">Zobacz moje prace</a></button>
+        </div>
+    </section>
+    <section id="oMnie">
+        <h2>O <span>mnie</span></h2>
+        <div class="container">
+            <div class="me row">
+                <img src="http://via.placeholder.com/200x260">
+                <div class="about col-md-6 col-sm-12">
+                    <h3>Cześć! Mam na imię Przemek,</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque ac ligula varius efficitur. Nullam non mi et nisl lobortis rutrum condimentum at ex. Curabitur nec nulla malesuada, laoreet leo posuere, bibendum dolor. Fusce
+                        augue felis, sagittis molestie dolor imperdiet, ultricies placerat magna. Nullam elit diam, vehicula quis lacinia quis, ultrices sagittis odio.</p>
+                    <p>Poniżej możesz znaleźć więcej informacji na mój temat, a także projekty, którymi zajmowałem się dotychczas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="coRobie">
+        <h2>Co <span>robię</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">HTML</div>
+                <div class="col-md-3">CSS</div>
+                <div class="col-md-3">RWD</div>
+                <div class="col-md-3">Sass</div>
+            </div>
+        </div>
+    </section>
+    <section id="projekty" class="text-center">
+        <h2>Moje <span>projekty</span></h2>
+        <div class="carousel slide row" data-ride="carousel">
+            <div class="carousel-inner col-md-6 col-sm-12">
+                <div class="item active">
+                    "Gadanie jest tanie. Pokaż mi kod."
+                    <p>Linus Torvalds</p>
+                </div>
+                <div class="item">
+                    "Mierzenie postępu programowania liniami kodu jest jak mierzenie postępu budowy samolotu za pomocą ciężaru."
+                    <p>Bill Gates</p>
+                </div>
+                <div class="item">
+                    "W teorii, teoria i praktyka są tym samym. W praktyce, nie są."
+                    <p>Yogi Berra</p>
+                </div>
+                <div class="item">
+                    "Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą."
+                    <p>Linus Torvalds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt" class="container text-center">
+        <h2>Kontakt <span>ze mną</span></h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 cooperation">
+                <div>Jeżeli przedstawiona przeze mnie oferta jest dla Ciebie interesująca i jesteś zainteresowany podjęciem ze mną współpracy, lub po prostu masz jakieś pytania, skontaktuj się ze mną. Razem dobierzemy rozwiązania, które sprostają Twoim potrzebom.
+                    </div>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i> 667 646 999</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> galdys.przemek@gmail.com</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form">
+                    <div class="form-group">
+                        <input class="form-control name" type="text" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control email" type="email" placeholder="Email" aria-describedby="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control message" rows="5" placeholder="Message..."></textarea>
+                    </div>
+                </div>
+                <button class="btn">Wyślij wiadomość</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <div class="socjals">
+                <a href="https://www.facebook.com/galdys.przemek" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/116749362226493736273" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/przemysław-gałdys" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/PrzemekG89" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <p>DevEnter. 2017<i class="fa fa-copyright" aria-hidden="true"></i> Przemysław Gałdys</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
