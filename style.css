@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Poiret+One&amp;subset=latin-ext");
 body {
   padding-top: 40px;
-  font-family: "Poiret One", cursive; }
+  font-family: "Poiret One"; }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
@@ -13,7 +13,7 @@ body {
   background-position: center;
   background-size: cover;
   height: 95vh;
-  font-family: "Kaushan Script", cursive; }
+  font-family: "Kaushan Script"; }
   .jumbotron h1 {
     color: #fff;
     margin-top: 20vh;
@@ -33,7 +33,7 @@ body {
 #oMnie, #coRobie, #projekty, #kontakt {
   padding: 50px; }
   #oMnie h2, #coRobie h2, #projekty h2, #kontakt h2 {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Open Sans Condensed";
     font-weight: 100;
     padding-bottom: 35px;
     text-align: center; }
