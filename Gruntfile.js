@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 
         watch: {
             scripts: {
-                files: ['sass/*.sass'],
+                files: ['style.sass'],
                 tasks: ['sass'],
                 options: {
                     spawn: false,
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
         browserSync: {
             bsFiles: {
-                src: 'assets/css/*.css'
+                src: 'style.sass'
             },
             options: {
                 server: {
