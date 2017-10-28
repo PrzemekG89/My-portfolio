@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Poiret+One&amp;subset=latin-ext")
-$bodyfont: 'Poiret One', cursive
+@import url("https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext")
+@import url("https://fonts.googleapis.com/css?family=Kalam:300&amp;subset=latin-ext")
+$bodyfont: 'Raleway', sans-serif
 $jumbofont: 'Kaushan Script', cursive
 $hfont: 'Open Sans Condensed', sans-serif
+$sentencefont: 'Kalam', cursive
 $wcolor: #fff
 $mycolor: #3EC7C2
 body 
@@ -13,29 +16,35 @@ body
 .navbar-inverse .navbar-nav>.active>a:hover 
     background-color: $mycolor
 
+.navbar-nav
+    li:hover
+        background-color: $mycolor
+
 .jumbotron 
     background-image: url("https://static.pexels.com/photos/261599/pexels-photo-261599.jpeg")
     background-position: center
     background-size: cover
     height: 95vh
-    font-family: $jumbofont
     h1 
         color: $wcolor
+        font-family: $jumbofont
         margin-top: 20vh
         padding: 20px
         background-color: rgba(0, 0, 0, 0.2)
+        -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5)
+        -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5)
+        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5)
     .watch 
         color: $wcolor
         margin-top: 15vh
         background-color: $mycolor
-        border-bottom: 4px solid #229692
-        a 
-            color: $wcolor
-            text-decoration: none
-            &:hover 
-                background-color: #4fd8d3
+        border-bottom: 2px solid #229692
+        transition: 1s
+        &:hover 
+            bbackground-color: #5FE9E4
+            transform: scale(1.2)
 
-#oMnie 
+.o_mnie
     padding: 50px
     h2 
         font-family: $hfont
@@ -48,59 +57,110 @@ body
             display: block
             margin: 10px auto
             width: 100px
-        span 
+        span
             font-weight: 700
-    .me 
+    .me
         display: flex
         justify-content: center
         align-items: center
         flex-wrap: wrap
         img
             padding: 20px
-        .about 
-            @extend img
+            border-radius: 5px
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(105,105,105,0.5)
+            -moz-box-shadow: 0px 0px 20px 1px rgba(105,105,105,0.5)
+            box-shadow: 0px 0px 20px 1px rgba(105,105,105,0.5)
+        .about
+            padding: 40px
             text-align: justify
+		
 
 #coRobie 
-    background-color: $mycolor
-    @extend #oMnie
+    @extend .o_mnie
 
-#projekty 
+#projekty
+    background-color: $mycolor
+    @extend .o_mnie
+
+.sentence 
+    @extend .o_mnie
     background-color: #27292B
-    @extend #oMnie
     color: $wcolor
-    .carousel 
-        height: 120px
-        margin: 0 auto
-#kontakt 
-    @extend #oMnie
-    .btn 
-        background-color: $mycolor
-        color: $wcolor
-        border-bottom: 4px solid #229692
-        margin: 20px 0 20px
+    .carousel
+        display: flex
+        justify-content: center
+        align-items: center
+        .carousel-inner
+            width: 50%
+            height: 180px
+            .sentence__img
+                margin: 0 auto
+                padding: 10px
+            .sentence__p
+                font-family: $sentencefont
+                font-size: 24px
     
+
+.kontakt 
+    @extend .o_mnie
+    .kontakt__form
+        .form__btn 
+            background-color: $mycolor
+            color: $wcolor
+            font-weight: bold
+            border-bottom: 2px solid #229692
+            margin: 20px 0 20px
+            transition-duration: 1s
+            &:hover
+                background-color: #5FE9E4
+                transform: scale(1.2)
+            
     .col-md-6 
         padding-right: 40px
         padding-left: 40px
-    
-    .cooperation 
+    .kontakt__cooperation 
         text-align: justify
         margin-bottom: 30px
-        p 
-            line-height: 28px
-        
-        .fa 
-            padding: 10px 10px 0 0
-            font-size: 28px
+        .kontakt__fa
+            margin-top: 20px
+            display: flex
+            flex-wrap: wrap
+            height: 30px
+            align-items: center
+            .fa 
+                margin: 0 10px 10px
+                font-size: 28px
 
-footer 
+.footer 
     background-color: #1B1B1B
     padding: 30px
     color: $wcolor
-    .socjals 
+    .footer__socjals 
         margin: 20px 0 40px
-        a 
+        .footer__socjals-link 
             padding: 20px
             font-size: 28px
-            color: #3ec7c2
+            color: $mycolor
+            transition: 2s
+            &:hover
+                background-color: #363636
+
+@media(max-width: 767px) 
+    .o_mnie
+        padding: 10px
+
+    .sentence
+        .carousel
+            .carousel-inner
+                width: 85%
+                height: 200px
+                .sentence__p
+                    font-size: 16px
+    .kontakt 
+        .kontakt__cooperation 
+            .kontakt__fa
+                .fa
+                    margin: 0 10px 10px 0
+                    font-size: 22px
+
+

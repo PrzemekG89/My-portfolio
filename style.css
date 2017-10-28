@@ -1,98 +1,144 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Poiret+One&amp;subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Kalam:300&amp;subset=latin-ext");
 body {
   padding-top: 40px;
-  font-family: "Poiret One", cursive; }
+  font-family: "Raleway", sans-serif; }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: #3EC7C2; }
 
+.navbar-nav li:hover {
+  background-color: #3EC7C2; }
+
 .jumbotron {
   background-image: url("https://static.pexels.com/photos/261599/pexels-photo-261599.jpeg");
   background-position: center;
   background-size: cover;
-  height: 95vh;
-  font-family: "Kaushan Script", cursive; }
+  height: 95vh; }
   .jumbotron h1 {
     color: #fff;
+    font-family: "Kaushan Script", cursive;
     margin-top: 20vh;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5); }
   .jumbotron .watch {
     color: #fff;
     margin-top: 15vh;
     background-color: #3EC7C2;
-    border-bottom: 4px solid #229692; }
-    .jumbotron .watch a {
-      color: #fff;
-      text-decoration: none; }
-      .jumbotron .watch a:hover {
-        background-color: #4fd8d3; }
+    border-bottom: 2px solid #229692;
+    transition: 1s; }
+    .jumbotron .watch:hover {
+      bbackground-color: #5FE9E4;
+      transform: scale(1.2); }
 
-#oMnie, #coRobie, #projekty, #kontakt {
+.o_mnie, #coRobie, #projekty, .sentence, .kontakt {
   padding: 50px; }
-  #oMnie h2, #coRobie h2, #projekty h2, #kontakt h2 {
+  .o_mnie h2, #coRobie h2, #projekty h2, .sentence h2, .kontakt h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 100;
     padding-bottom: 35px;
     text-align: center; }
-    #oMnie h2:after, #coRobie h2:after, #projekty h2:after, #kontakt h2:after {
+    .o_mnie h2:after, #coRobie h2:after, #projekty h2:after, .sentence h2:after, .kontakt h2:after {
       content: "";
       border-top: 1px solid;
       display: block;
       margin: 10px auto;
       width: 100px; }
-    #oMnie h2 span, #coRobie h2 span, #projekty h2 span, #kontakt h2 span {
+    .o_mnie h2 span, #coRobie h2 span, #projekty h2 span, .sentence h2 span, .kontakt h2 span {
       font-weight: 700; }
-  #oMnie .me, #coRobie .me, #projekty .me, #kontakt .me {
+  .o_mnie .me, #coRobie .me, #projekty .me, .sentence .me, .kontakt .me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    #oMnie .me img, #coRobie .me img, #projekty .me img, #kontakt .me img, #oMnie .me .about, #coRobie .me .about, #projekty .me .about, #kontakt .me .about {
-      padding: 20px; }
-    #oMnie .me .about, #coRobie .me .about, #projekty .me .about, #kontakt .me .about {
+    .o_mnie .me img, #coRobie .me img, #projekty .me img, .sentence .me img, .kontakt .me img {
+      padding: 20px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
+      -moz-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
+      box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5); }
+    .o_mnie .me .about, #coRobie .me .about, #projekty .me .about, .sentence .me .about, .kontakt .me .about {
+      padding: 40px;
       text-align: justify; }
 
-#coRobie {
+#projekty {
   background-color: #3EC7C2; }
 
-#projekty {
+.sentence {
   background-color: #27292B;
   color: #fff; }
-  #projekty .carousel {
-    height: 120px;
-    margin: 0 auto; }
+  .sentence .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sentence .carousel .carousel-inner {
+      width: 50%;
+      height: 180px; }
+      .sentence .carousel .carousel-inner .sentence__img {
+        margin: 0 auto;
+        padding: 10px; }
+      .sentence .carousel .carousel-inner .sentence__p {
+        font-family: "Kalam", cursive;
+        font-size: 24px; }
 
-#kontakt .btn {
+.kontakt .kontakt__form .form__btn {
   background-color: #3EC7C2;
   color: #fff;
-  border-bottom: 4px solid #229692;
-  margin: 20px 0 20px; }
-
-#kontakt .col-md-6 {
+  font-weight: bold;
+  border-bottom: 2px solid #229692;
+  margin: 20px 0 20px;
+  transition-duration: 1s; }
+  .kontakt .kontakt__form .form__btn:hover {
+    background-color: #5FE9E4;
+    transform: scale(1.2); }
+.kontakt .col-md-6 {
   padding-right: 40px;
   padding-left: 40px; }
-
-#kontakt .cooperation {
+.kontakt .kontakt__cooperation {
   text-align: justify;
   margin-bottom: 30px; }
-  #kontakt .cooperation p {
-    line-height: 28px; }
-  #kontakt .cooperation .fa {
-    padding: 10px 10px 0 0;
-    font-size: 28px; }
+  .kontakt .kontakt__cooperation .kontakt__fa {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    align-items: center; }
+    .kontakt .kontakt__cooperation .kontakt__fa .fa {
+      margin: 0 10px 10px;
+      font-size: 28px; }
 
-footer {
+.footer {
   background-color: #1B1B1B;
   padding: 30px;
   color: #fff; }
-  footer .socjals {
+  .footer .footer__socjals {
     margin: 20px 0 40px; }
-    footer .socjals a {
+    .footer .footer__socjals .footer__socjals-link {
       padding: 20px;
       font-size: 28px;
-      color: #3ec7c2; }
+      color: #3EC7C2;
+      transition: 2s; }
+      .footer .footer__socjals .footer__socjals-link:hover {
+        background-color: #363636; }
+
+@media(max-width: 767px) {
+  .o_mnie, #coRobie, #projekty, .sentence, .kontakt {
+    padding: 10px; }
+
+  .sentence .carousel .carousel-inner {
+    width: 85%;
+    height: 200px; }
+    .sentence .carousel .carousel-inner .sentence__p {
+      font-size: 16px; }
+
+  .kontakt .kontakt__cooperation .kontakt__fa .fa {
+    margin: 0 10px 10px 0;
+    font-size: 22px; } }
 
 /*# sourceMappingURL=style.css.map */

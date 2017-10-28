@@ -17,7 +17,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="nvbar-brand" href="#">DevEnter.</a>
+                <a class="nvbar-brand" href="#jumbotron">DevEnter.</a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expandet="false">
 					<span class="sr-only">Toggle navigation</span>
                    	<span class="icon-bar"></span> 
@@ -27,7 +27,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="navbar-nav nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#jumbotron">Home</a></li>
                     <li><a href="#oMnie">O mnie</a></li>
                     <li><a href="#coRobie">Co robię</a></li>
                     <li><a href="#projekty">Moje projekty</a></li>
@@ -37,17 +37,17 @@
             </div>
         </div>
     </nav>
-    <section class="jumbotron jumbotron-fluid text-center">
+    <section class="jumbotron jumbotron-fluid text-center" id="jumbotron">
         <div class="container">
             <h1>Junior Web Developer</h1>
-            <button class="btn btn-lg watch"><a href="#projekty">Zobacz moje prace</a></button>
+            <a href="#projekty"><button class="btn btn-lg watch">Zobacz moje prace</button></a>
         </div>
     </section>
-    <section id="oMnie">
+    <section id="oMnie" class="o_mnie">
         <h2>O <span>mnie</span></h2>
         <div class="container">
             <div class="me row">
-                <img src="http://via.placeholder.com/200x260">
+                <img class="img-responsive" src="images/myphoto.jpg">
                 <div class="about col-md-6 col-sm-12">
                     <h3>Cześć! Mam na imię Przemek,</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque ac ligula varius efficitur. Nullam non mi et nisl lobortis rutrum condimentum at ex. Curabitur nec nulla malesuada, laoreet leo posuere, bibendum dolor. Fusce
@@ -59,48 +59,127 @@
     </section>
     <section id="coRobie">
         <h2>Co <span>robię</span></h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">HTML</div>
-                <div class="col-md-3">CSS</div>
-                <div class="col-md-3">RWD</div>
-                <div class="col-md-3">Sass</div>
+        <div class="container text-center">
+            <div class="features__grid row">
+                <div class="features__cell col-md-4">
+                    <div class="features__cellcontent">
+                        <img src="img/icon1.png">
+                        <h5 class="features__h5">easily customised</h5>
+                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                    </div>
+                </div>
+                <div class="features__cell col-md-4">
+                    <div class="features__cellcontent">
+                        <img src="img/icon2.png">
+                        <h5 class="features__h5">responsive ready</h5>
+                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                    </div>
+                </div>
+                <div class="features__cell col-md-4">
+                    <div class="features__cellcontent">
+                        <img src="img/icon3.png">
+                        <h5 class="features__h5">modern design</h5>
+                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features__grid row">
+                <div class="features__cell col-md-4">
+                    <div class="features__cellcontent">
+                        <img src="img/icon4.png">
+                        <h5 class="features__h5">clean code</h5>
+                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                    </div>
+                </div>
+                <div class="features__cell col-md-4">
+                    <div class="features__cellcontent">
+                        <img src="img/icon5.png">
+                        <h5 class="features__h5">ready to ship</h5>
+                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                    </div>
+                </div>
+                <div class="features__cell col-md-4">
+                    <div class="features__cellcontent">
+                        <img src="img/icon6.png">
+                        <h5 class="features__h5">download for free</h5>
+                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section id="projekty" class="text-center">
         <h2>Moje <span>projekty</span></h2>
-        <div class="carousel slide row" data-ride="carousel">
-            <div class="carousel-inner col-md-6 col-sm-12">
-                <div class="item active">
-                    "Gadanie jest tanie. Pokaż mi kod."
-                    <p>Linus Torvalds</p>
+        <div class="works__grid row">
+            <div class="works__cell col-md-3">
+                <img class="works__img" src="img/photo1.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">project name</h5>
+                    <p>User Interface Design</p>
                 </div>
-                <div class="item">
-                    "Mierzenie postępu programowania liniami kodu jest jak mierzenie postępu budowy samolotu za pomocą ciężaru."
-                    <p>Bill Gates</p>
+            </div>
+            <div class="works__cell col-md-3">
+                <img class="works__img" src="img/photo2.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">project name</h5>
+                    <p>User Interface Design</p>
                 </div>
-                <div class="item">
-                    "W teorii, teoria i praktyka są tym samym. W praktyce, nie są."
-                    <p>Yogi Berra</p>
+            </div>
+            <div class="works__cell col-md-3">
+                <img class="works__img" src="img/photo4.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">project name</h5>
+                    <p>User Interface Design</p>
                 </div>
-                <div class="item">
-                    "Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą."
-                    <p>Linus Torvalds</p>
+            </div>
+            <div class="works__cell col-md-3">
+                <img class="works__img" src="img/photo3.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">project name</h5>
+                    <p>User Interface Design</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="kontakt" class="container text-center">
-        <h2>Kontakt <span>ze mną</span></h2>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 cooperation">
-                <div>Jeżeli przedstawiona przeze mnie oferta jest dla Ciebie interesująca i jesteś zainteresowany podjęciem ze mną współpracy, lub po prostu masz jakieś pytania, skontaktuj się ze mną. Razem dobierzemy rozwiązania, które sprostają Twoim potrzebom.
+    <section class="sentence text-center">
+        <div class="container">
+            <div class="carousel slide row" data-ride="carousel">
+                <div class="carousel-inner col-md-6 col-sm-12">
+                    <div class="sentence__item item active">
+                        <img class="sentence__img" src="images/quote-circular-button.png">
+                        <p class="sentence__p">Mierzenie postępu programowania liniami kodu jest jak mierzenie postępu budowy samolotu za pomocą ciężaru.</p>
+                        <h5>- Bill Gates</h5>
                     </div>
-                <p><i class="fa fa-phone-square" aria-hidden="true"></i> 667 646 999</p>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i> galdys.przemek@gmail.com</p>
+                    <div class="sentence__item item">
+                        <img class="sentence__img" src="images/quote-circular-button.png">
+                        <p class="sentence__p">W teorii, teoria i praktyka są tym samym. W praktyce, nie są.</p>
+                        <h5>- Yogi Berra</h5>
+                    </div>
+                    <div class="sentence__item item">
+                        <img class="sentence__img" src="images/quote-circular-button.png">
+                        <p class="sentence__p">Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą.</p>
+                        <h5>- Linus Torvalds</h5>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+        </div>
+    </section>
+    <section id="kontakt" class=" kontakt container text-center">
+        <h2 class="kontakt_h">Kontakt <span>ze mną</span></h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 kontakt__cooperation">
+                <div>Jeżeli przedstawiona przeze mnie oferta jest dla Ciebie interesująca i jesteś zainteresowany podjęciem ze mną współpracy, lub po prostu masz jakieś pytania, skontaktuj się ze mną. Razem dobierzemy rozwiązania, które sprostają Twoim potrzebom.
+                </div>
+                <div class="kontakt__fa">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <p>667 646 999</p>
+                </div>
+                <div class="kontakt__fa">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>galdys.przemek@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 kontakt__form">
                 <div class="form">
                     <div class="form-group">
                         <input class="form-control name" type="text" placeholder="Name">
@@ -112,24 +191,25 @@
                         <textarea class="form-control message" rows="5" placeholder="Message..."></textarea>
                     </div>
                 </div>
-                <button class="btn">Wyślij wiadomość</button>
+                <button class="btn form__btn">Wyślij wiadomość</button>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
         <div class="container text-center">
-            <div class="socjals">
-                <a href="https://www.facebook.com/galdys.przemek" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://plus.google.com/116749362226493736273" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/przemysław-gałdys" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://github.com/PrzemekG89" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <div class="footer__socjals">
+                <a class="footer__socjals-link" href="https://www.facebook.com/galdys.przemek" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="footer__socjals-link" href="https://plus.google.com/116749362226493736273" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a class="footer__socjals-link" href="https://www.linkedin.com/in/przemysław-gałdys" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a class="footer__socjals-link" href="https://github.com/PrzemekG89" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
-            <p>DevEnter. 2017<i class="fa fa-copyright" aria-hidden="true"></i> Przemysław Gałdys</p>
+            <p class="footer__copy">DevEnter. 2017 <i class="fa fa-copyright" aria-hidden="true"></i> Przemysław Gałdys</p>
         </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>
