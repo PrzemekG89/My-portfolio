@@ -15,10 +15,19 @@ body
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover 
     background-color: $mycolor
-
-.navbar-nav
-    li:hover
-        background-color: $mycolor
+.navbar
+    .navbar-brand
+        text-decoration: none
+        color: $wcolor
+        transition-duration: 1s
+        font-family: $jumbofont
+        &:hover
+            background-color: #cccccc
+            color: #363636
+    .navbar-nav
+        li:hover
+            transition: 1s
+            background-color: $mycolor
 
 .jumbotron 
     background-image: url("https://static.pexels.com/photos/261599/pexels-photo-261599.jpeg")
@@ -45,7 +54,7 @@ body
             transform: scale(1.2)
 
 .o_mnie
-    padding: 50px
+    padding: 40px
     h2 
         font-family: $hfont
         font-weight: 100
@@ -74,10 +83,9 @@ body
             padding: 40px
             text-align: justify
 		
-
-#coRobie 
+.corobie 
     @extend .o_mnie
-
+            
 #projekty
     background-color: $mycolor
     @extend .o_mnie
@@ -93,12 +101,14 @@ body
         .carousel-inner
             width: 50%
             height: 180px
-            .sentence__img
-                margin: 0 auto
-                padding: 10px
-            .sentence__p
-                font-family: $sentencefont
-                font-size: 24px
+            .sentence__item
+                margin: auto
+                .sentence__img
+                    margin: 0 auto
+                    padding: 10px
+                .sentence__p
+                    font-family: $sentencefont
+                    font-size: 24px
     
 
 .kontakt 
@@ -113,8 +123,7 @@ body
             transition-duration: 1s
             &:hover
                 background-color: #5FE9E4
-                transform: scale(1.2)
-            
+                transform: scale(1.2)       
     .col-md-6 
         padding-right: 40px
         padding-left: 40px
@@ -145,17 +154,21 @@ body
             &:hover
                 background-color: #363636
 
-@media(max-width: 767px) 
+@media(max-width: 767px)
+    .jumbotron
+        margin-bottom: 0
+        
     .o_mnie
-        padding: 10px
+        padding: 20px
 
     .sentence
         .carousel
             .carousel-inner
                 width: 85%
                 height: 200px
-                .sentence__p
-                    font-size: 16px
+                .sentence__item
+                    .sentence__p
+                        font-size: 16px
     .kontakt 
         .kontakt__cooperation 
             .kontakt__fa

@@ -13,11 +13,11 @@
 
 </head>
 
-<body>
+<body id="start">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="nvbar-brand" href="#jumbotron">DevEnter.</a>
+                <a class="navbar-brand" href="#start">DevEnter.</a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expandet="false">
 					<span class="sr-only">Toggle navigation</span>
                    	<span class="icon-bar"></span> 
@@ -27,7 +27,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="navbar-nav nav navbar-right">
-                    <li class="active"><a href="#jumbotron">Home</a></li>
+                    <li class="active"><a href="#start">Home</a></li>
                     <li><a href="#oMnie">O mnie</a></li>
                     <li><a href="#coRobie">Co robię</a></li>
                     <li><a href="#projekty">Moje projekty</a></li>
@@ -50,59 +50,36 @@
                 <img class="img-responsive" src="images/myphoto.jpg">
                 <div class="about col-md-6 col-sm-12">
                     <h3>Cześć! Mam na imię Przemek,</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque ac ligula varius efficitur. Nullam non mi et nisl lobortis rutrum condimentum at ex. Curabitur nec nulla malesuada, laoreet leo posuere, bibendum dolor. Fusce
-                        augue felis, sagittis molestie dolor imperdiet, ultricies placerat magna. Nullam elit diam, vehicula quis lacinia quis, ultrices sagittis odio.</p>
+                    <p>dotychczasową branżą w której pracowałem była administracja publiczna. Nabyłem tam cenne doświadczenia, w szczególności w kontaktach z klientem. Obecnie skupiam się na doskonaleniu umiejętności koderskich zdobywanych na profesjonalnym
+                        szkoleniu programistycznym. Podczas pracy nad moimi projektami wymagam od siebie, aby tworzone storny były fuknjonalne, estetyczne oraz nowoczesne.</p>
                     <p>Poniżej możesz znaleźć więcej informacji na mój temat, a także projekty, którymi zajmowałem się dotychczas.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="coRobie">
+    <section id="coRobie" class="corobie">
         <h2>Co <span>robię</span></h2>
         <div class="container text-center">
-            <div class="features__grid row">
-                <div class="features__cell col-md-4">
-                    <div class="features__cellcontent">
-                        <img src="img/icon1.png">
-                        <h5 class="features__h5">easily customised</h5>
-                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+            <div class="corobie__grid row">
+                <div class="corobie__cell col-md-4">
+                    <div class="cell__content">
+                        <img class="cell__img" src="images/browser.png">
+                        <h5 class="features__h5">Tworzenie kodu</h5>
+                        <p class="features__p">Pisanie ston internetowych z wykorzystaniem aktualnych technologii weboych zgodnie z obowiązującymi standardami oraz potrzebami klienta.</p>
                     </div>
                 </div>
-                <div class="features__cell col-md-4">
-                    <div class="features__cellcontent">
-                        <img src="img/icon2.png">
-                        <h5 class="features__h5">responsive ready</h5>
-                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                <div class="corobie__cell col-md-4">
+                    <div class="cell__content">
+                        <img class="cell__img" src="images/responsive-design-symbol.png">
+                        <h5 class="features__h5">Responsive Web Design</h5>
+                        <p class="features__p">Podczas tworzenia szczególną uwagę zwracam na to aby strona doskonale wyglądała zarówno na monitorach ekranowych jak i ekranach tabletów oraz smartfonów.</p>
                     </div>
                 </div>
-                <div class="features__cell col-md-4">
-                    <div class="features__cellcontent">
-                        <img src="img/icon3.png">
-                        <h5 class="features__h5">modern design</h5>
-                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
-                    </div>
-                </div>
-            </div>
-            <div class="features__grid row">
-                <div class="features__cell col-md-4">
-                    <div class="features__cellcontent">
-                        <img src="img/icon4.png">
-                        <h5 class="features__h5">clean code</h5>
-                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
-                    </div>
-                </div>
-                <div class="features__cell col-md-4">
-                    <div class="features__cellcontent">
-                        <img src="img/icon5.png">
-                        <h5 class="features__h5">ready to ship</h5>
-                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
-                    </div>
-                </div>
-                <div class="features__cell col-md-4">
-                    <div class="features__cellcontent">
-                        <img src="img/icon6.png">
-                        <h5 class="features__h5">download for free</h5>
-                        <p class="features__p">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+                <div class="corobie__cell col-md-4">
+                    <div class="cell__content">
+                        <img class="cell__img" src="images/light-bulb.png">
+                        <h5 class="features__h5">Technologie</h5>
+                        <p class="features__p">W swoich pracach kożystam między innymi z HTML5, CSS3, Sass, Bootstrap, Flexbox czy JavaScript. Cały czas rozwijam dodatkowe umiejętności aby sprostać nawet najbardziej wymagającym klientom.</p>
                     </div>
                 </div>
             </div>

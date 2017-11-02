@@ -10,7 +10,16 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: #3EC7C2; }
 
-.navbar-nav li:hover {
+.navbar .navbar-brand {
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 1s;
+  font-family: "Kaushan Script", cursive; }
+  .navbar .navbar-brand:hover {
+    background-color: #cccccc;
+    color: #363636; }
+.navbar .navbar-nav li:hover {
+  transition: 1s;
   background-color: #3EC7C2; }
 
 .jumbotron {
@@ -37,33 +46,33 @@ body {
       bbackground-color: #5FE9E4;
       transform: scale(1.2); }
 
-.o_mnie, #coRobie, #projekty, .sentence, .kontakt {
-  padding: 50px; }
-  .o_mnie h2, #coRobie h2, #projekty h2, .sentence h2, .kontakt h2 {
+.o_mnie, .corobie, #projekty, .sentence, .kontakt {
+  padding: 40px; }
+  .o_mnie h2, .corobie h2, #projekty h2, .sentence h2, .kontakt h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 100;
     padding-bottom: 35px;
     text-align: center; }
-    .o_mnie h2:after, #coRobie h2:after, #projekty h2:after, .sentence h2:after, .kontakt h2:after {
+    .o_mnie h2:after, .corobie h2:after, #projekty h2:after, .sentence h2:after, .kontakt h2:after {
       content: "";
       border-top: 1px solid;
       display: block;
       margin: 10px auto;
       width: 100px; }
-    .o_mnie h2 span, #coRobie h2 span, #projekty h2 span, .sentence h2 span, .kontakt h2 span {
+    .o_mnie h2 span, .corobie h2 span, #projekty h2 span, .sentence h2 span, .kontakt h2 span {
       font-weight: 700; }
-  .o_mnie .me, #coRobie .me, #projekty .me, .sentence .me, .kontakt .me {
+  .o_mnie .me, .corobie .me, #projekty .me, .sentence .me, .kontakt .me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .o_mnie .me img, #coRobie .me img, #projekty .me img, .sentence .me img, .kontakt .me img {
+    .o_mnie .me img, .corobie .me img, #projekty .me img, .sentence .me img, .kontakt .me img {
       padding: 20px;
       border-radius: 5px;
       -webkit-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       -moz-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5); }
-    .o_mnie .me .about, #coRobie .me .about, #projekty .me .about, .sentence .me .about, .kontakt .me .about {
+    .o_mnie .me .about, .corobie .me .about, #projekty .me .about, .sentence .me .about, .kontakt .me .about {
       padding: 40px;
       text-align: justify; }
 
@@ -80,12 +89,14 @@ body {
     .sentence .carousel .carousel-inner {
       width: 50%;
       height: 180px; }
-      .sentence .carousel .carousel-inner .sentence__img {
-        margin: 0 auto;
-        padding: 10px; }
-      .sentence .carousel .carousel-inner .sentence__p {
-        font-family: "Kalam", cursive;
-        font-size: 24px; }
+      .sentence .carousel .carousel-inner .sentence__item {
+        margin: auto; }
+        .sentence .carousel .carousel-inner .sentence__item .sentence__img {
+          margin: 0 auto;
+          padding: 10px; }
+        .sentence .carousel .carousel-inner .sentence__item .sentence__p {
+          font-family: "Kalam", cursive;
+          font-size: 24px; }
 
 .kontakt .kontakt__form .form__btn {
   background-color: #3EC7C2;
@@ -128,13 +139,16 @@ body {
         background-color: #363636; }
 
 @media(max-width: 767px) {
-  .o_mnie, #coRobie, #projekty, .sentence, .kontakt {
-    padding: 10px; }
+  .jumbotron {
+    margin-bottom: 0; }
+
+  .o_mnie, .corobie, #projekty, .sentence, .kontakt {
+    padding: 20px; }
 
   .sentence .carousel .carousel-inner {
     width: 85%;
     height: 200px; }
-    .sentence .carousel .carousel-inner .sentence__p {
+    .sentence .carousel .carousel-inner .sentence__item .sentence__p {
       font-size: 16px; }
 
   .kontakt .kontakt__cooperation .kontakt__fa .fa {
