@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Poiret+One&amp;subset=latin-ext")
 @import url("https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext")
 @import url("https://fonts.googleapis.com/css?family=Kalam:300&amp;subset=latin-ext")
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext")
 $bodyfont: 'Raleway', sans-serif
 $jumbofont: 'Kaushan Script', cursive
 $hfont: 'Open Sans Condensed', sans-serif
@@ -82,13 +83,65 @@ body
         .about
             padding: 40px
             text-align: justify
+            .about__h
+                padding-bottom: 15px
 		
 .corobie 
     @extend .o_mnie
+    .cell__h5
+        text-transform: uppercase
+        padding-bottom: 10px
+        font-weight: bold
             
-#projekty
+.works
     background-color: $mycolor
     @extend .o_mnie
+    .works__grid
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        transition: 2s
+        .works__cell
+            margin-bottom: 10px
+            padding-left: 0
+            padding-right: 0
+            position: relative
+            transition: width 2s, height 2s, transform 2s
+            .works__img
+                border: 3px solid $wcolor
+                border-radius: 5px
+                padding: 5px
+                height: 250px
+                transition: width 2s, height 2s, transform 2s
+            .works__div--hover
+                position: absolute
+                top: 0
+                height: 100%
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                font-family: 'Roboto', sans-serif
+                color: #131313
+                font-weight: 700
+                background-color: rgba(250, 250, 250, 0.8)
+                visibility: hidden
+                .works__h5
+                    padding: 0
+                    font-weight: bold
+                    font-size: 16px
+                .works__p
+                    padding: 15px
+                .btn
+                    background-color: $mycolor
+                    color: $wcolor
+                    width: 100px
+                    &:hover
+                        background-color: #5FE9E4
+                        transform: scale(1.2) 
+            &:hover
+                .works__div--hover
+                    visibility: visible
 
 .sentence 
     @extend .o_mnie

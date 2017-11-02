@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Poiret+One&amp;subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Kalam:300&amp;subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext");
 body {
   padding-top: 40px;
   font-family: "Raleway", sans-serif; }
@@ -13,7 +14,7 @@ body {
 .navbar .navbar-brand {
   text-decoration: none;
   color: #fff;
-  transition-duration: 1s;
+  transition: 1s;
   font-family: "Kaushan Script", cursive; }
   .navbar .navbar-brand:hover {
     background-color: #cccccc;
@@ -46,38 +47,90 @@ body {
       bbackground-color: #5FE9E4;
       transform: scale(1.2); }
 
-.o_mnie, .corobie, #projekty, .sentence, .kontakt {
+.o_mnie, .corobie, .works, .sentence, .kontakt {
   padding: 40px; }
-  .o_mnie h2, .corobie h2, #projekty h2, .sentence h2, .kontakt h2 {
+  .o_mnie h2, .corobie h2, .works h2, .sentence h2, .kontakt h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 100;
     padding-bottom: 35px;
     text-align: center; }
-    .o_mnie h2:after, .corobie h2:after, #projekty h2:after, .sentence h2:after, .kontakt h2:after {
+    .o_mnie h2:after, .corobie h2:after, .works h2:after, .sentence h2:after, .kontakt h2:after {
       content: "";
       border-top: 1px solid;
       display: block;
       margin: 10px auto;
       width: 100px; }
-    .o_mnie h2 span, .corobie h2 span, #projekty h2 span, .sentence h2 span, .kontakt h2 span {
+    .o_mnie h2 span, .corobie h2 span, .works h2 span, .sentence h2 span, .kontakt h2 span {
       font-weight: 700; }
-  .o_mnie .me, .corobie .me, #projekty .me, .sentence .me, .kontakt .me {
+  .o_mnie .me, .corobie .me, .works .me, .sentence .me, .kontakt .me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .o_mnie .me img, .corobie .me img, #projekty .me img, .sentence .me img, .kontakt .me img {
+    .o_mnie .me img, .corobie .me img, .works .me img, .sentence .me img, .kontakt .me img {
       padding: 20px;
       border-radius: 5px;
       -webkit-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       -moz-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5); }
-    .o_mnie .me .about, .corobie .me .about, #projekty .me .about, .sentence .me .about, .kontakt .me .about {
+    .o_mnie .me .about, .corobie .me .about, .works .me .about, .sentence .me .about, .kontakt .me .about {
       padding: 40px;
       text-align: justify; }
+      .o_mnie .me .about .about__h, .corobie .me .about .about__h, .works .me .about .about__h, .sentence .me .about .about__h, .kontakt .me .about .about__h {
+        padding-bottom: 15px; }
 
-#projekty {
+.corobie .cell__h5 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: bold; }
+
+.works {
   background-color: #3EC7C2; }
+  .works .works__grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 2s; }
+    .works .works__grid .works__cell {
+      margin-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      transition: width 2s, height 2s, transform 2s; }
+      .works .works__grid .works__cell .works__img {
+        border: 3px solid #fff;
+        border-radius: 5px;
+        padding: 5px;
+        height: 250px;
+        transition: width 2s, height 2s, transform 2s; }
+      .works .works__grid .works__cell .works__div--hover {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        color: #131313;
+        font-weight: 700;
+        background-color: rgba(250, 250, 250, 0.8);
+        visibility: hidden; }
+        .works .works__grid .works__cell .works__div--hover .works__h5 {
+          padding: 0;
+          font-weight: bold;
+          font-size: 16px; }
+        .works .works__grid .works__cell .works__div--hover .works__p {
+          padding: 15px; }
+        .works .works__grid .works__cell .works__div--hover .btn {
+          background-color: #3EC7C2;
+          color: #fff;
+          width: 100px; }
+          .works .works__grid .works__cell .works__div--hover .btn:hover {
+            background-color: #5FE9E4;
+            transform: scale(1.2); }
+      .works .works__grid .works__cell:hover .works__div--hover {
+        visibility: visible; }
 
 .sentence {
   background-color: #27292B;
@@ -142,7 +195,7 @@ body {
   .jumbotron {
     margin-bottom: 0; }
 
-  .o_mnie, .corobie, #projekty, .sentence, .kontakt {
+  .o_mnie, .corobie, .works, .sentence, .kontakt {
     padding: 20px; }
 
   .sentence .carousel .carousel-inner {
