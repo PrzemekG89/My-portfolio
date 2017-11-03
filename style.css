@@ -47,39 +47,39 @@ body {
       bbackground-color: #5FE9E4;
       transform: scale(1.2); }
 
-.o_mnie, .corobie, .works, .sentence, .kontakt {
+.aboutme, .whatdo, .works, .sentence, .contact {
   padding: 40px; }
-  .o_mnie h2, .corobie h2, .works h2, .sentence h2, .kontakt h2 {
+  .aboutme h2, .whatdo h2, .works h2, .sentence h2, .contact h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 100;
     padding-bottom: 35px;
     text-align: center; }
-    .o_mnie h2:after, .corobie h2:after, .works h2:after, .sentence h2:after, .kontakt h2:after {
+    .aboutme h2:after, .whatdo h2:after, .works h2:after, .sentence h2:after, .contact h2:after {
       content: "";
       border-top: 1px solid;
       display: block;
       margin: 10px auto;
       width: 100px; }
-    .o_mnie h2 span, .corobie h2 span, .works h2 span, .sentence h2 span, .kontakt h2 span {
+    .aboutme h2 span, .whatdo h2 span, .works h2 span, .sentence h2 span, .contact h2 span {
       font-weight: 700; }
-  .o_mnie .me, .corobie .me, .works .me, .sentence .me, .kontakt .me {
+  .aboutme .me, .whatdo .me, .works .me, .sentence .me, .contact .me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .o_mnie .me img, .corobie .me img, .works .me img, .sentence .me img, .kontakt .me img {
+    .aboutme .me img, .whatdo .me img, .works .me img, .sentence .me img, .contact .me img {
       padding: 20px;
       border-radius: 5px;
       -webkit-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       -moz-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5); }
-    .o_mnie .me .about, .corobie .me .about, .works .me .about, .sentence .me .about, .kontakt .me .about {
+    .aboutme .me .about, .whatdo .me .about, .works .me .about, .sentence .me .about, .contact .me .about {
       padding: 40px;
       text-align: justify; }
-      .o_mnie .me .about .about__h, .corobie .me .about .about__h, .works .me .about .about__h, .sentence .me .about .about__h, .kontakt .me .about .about__h {
+      .aboutme .me .about .about__h, .whatdo .me .about .about__h, .works .me .about .about__h, .sentence .me .about .about__h, .contact .me .about .about__h {
         padding-bottom: 15px; }
 
-.corobie .cell__h5 {
+.whatdo .cell__h5 {
   text-transform: uppercase;
   padding-bottom: 10px;
   font-weight: bold; }
@@ -151,29 +151,29 @@ body {
           font-family: "Kalam", cursive;
           font-size: 24px; }
 
-.kontakt .kontakt__form .form__btn {
+.contact .contact__form .form__btn {
   background-color: #3EC7C2;
   color: #fff;
   font-weight: bold;
   border-bottom: 2px solid #229692;
   margin: 20px 0 20px;
   transition-duration: 1s; }
-  .kontakt .kontakt__form .form__btn:hover {
+  .contact .contact__form .form__btn:hover {
     background-color: #5FE9E4;
     transform: scale(1.2); }
-.kontakt .col-md-6 {
+.contact .col-md-6 {
   padding-right: 40px;
   padding-left: 40px; }
-.kontakt .kontakt__cooperation {
+.contact .contact__cooperation {
   text-align: justify;
   margin-bottom: 30px; }
-  .kontakt .kontakt__cooperation .kontakt__fa {
+  .contact .contact__cooperation .contact__fa {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     height: 30px;
     align-items: center; }
-    .kontakt .kontakt__cooperation .kontakt__fa .fa {
+    .contact .contact__cooperation .contact__fa .fa {
       margin: 0 10px 10px;
       font-size: 28px; }
 
@@ -195,7 +195,7 @@ body {
   .jumbotron {
     margin-bottom: 0; }
 
-  .o_mnie, .corobie, .works, .sentence, .kontakt {
+  .aboutme, .whatdo, .works, .sentence, .contact {
     padding: 20px; }
 
   .sentence .carousel .carousel-inner {
@@ -204,7 +204,7 @@ body {
     .sentence .carousel .carousel-inner .sentence__item .sentence__p {
       font-size: 16px; }
 
-  .kontakt .kontakt__cooperation .kontakt__fa .fa {
+  .contact .contact__cooperation .contact__fa .fa {
     margin: 0 10px 10px 0;
     font-size: 22px; } }
 
