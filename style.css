@@ -19,7 +19,6 @@ body {
   .navbar .navbar-brand:hover {
     background-color: #cccccc;
     color: #363636; }
-
 .navbar .navbar-nav li:hover {
   transition: 1s;
   background-color: #3EC7C2; }
@@ -93,7 +92,9 @@ body {
     flex-wrap: wrap;
     transition: 2s; }
     .works .works__grid .works__cell {
-      margin-bottom: 10px;
+      width: 100%;
+      max-width: 350px;
+      margin: 10px;
       padding-left: 0;
       padding-right: 0;
       position: relative;
@@ -112,7 +113,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         color: #131313;
         font-weight: 700;
         background-color: rgba(250, 250, 250, 0.8);
@@ -162,11 +163,9 @@ body {
   .contact .contact__form .form__btn:hover {
     background-color: #5FE9E4;
     transform: scale(1.2); }
-
 .contact .col-md-6 {
   padding-right: 40px;
   padding-left: 40px; }
-
 .contact .contact__cooperation {
   text-align: justify;
   margin-bottom: 30px; }
@@ -194,16 +193,19 @@ body {
       .footer .footer__socjals .footer__socjals-link:hover {
         background-color: #363636; }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .jumbotron {
     margin-bottom: 0; }
+
   .aboutme, .whatdo, .works, .sentence, .contact {
     padding: 20px; }
+
   .sentence .carousel .carousel-inner {
     width: 85%;
     height: 200px; }
     .sentence .carousel .carousel-inner .sentence__item .sentence__p {
       font-size: 16px; }
+
   .contact .contact__cooperation .contact__fa .fa {
     margin: 0 10px 10px 0;
     font-size: 22px; } }
