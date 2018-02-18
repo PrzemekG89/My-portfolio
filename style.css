@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Kalam:300&amp;subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext");
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 body {
   padding-top: 40px;
   font-family: "Raleway", sans-serif; }
@@ -68,14 +78,17 @@ body {
     align-items: center;
     flex-wrap: wrap; }
     .aboutme .me img, .whatdo .me img, .works .me img, .sentence .me img, .contact .me img {
-      padding: 20px;
+      padding: 10px;
       border-radius: 5px;
+      max-height: 70vh;
+      margin: 0 auto;
       -webkit-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       -moz-box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5);
       box-shadow: 0px 0px 20px 1px rgba(105, 105, 105, 0.5); }
     .aboutme .me .about, .whatdo .me .about, .works .me .about, .sentence .me .about, .contact .me .about {
       padding: 40px;
-      text-align: justify; }
+      text-align: justify;
+      margin: 0 auto; }
       .aboutme .me .about .about__h, .whatdo .me .about .about__h, .works .me .about .about__h, .sentence .me .about .about__h, .contact .me .about .about__h {
         padding-bottom: 15px; }
 
@@ -127,11 +140,14 @@ body {
         .works .works__grid .works__cell .works__div--hover .btn {
           background-color: #3EC7C2;
           color: #fff;
-          width: 100px; }
+          width: 100px;
+          transition: 0.5s; }
           .works .works__grid .works__cell .works__div--hover .btn:hover {
             background-color: #5FE9E4;
             transform: scale(1.2); }
       .works .works__grid .works__cell:hover .works__div--hover {
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
         visibility: visible; }
 
 .sentence {
