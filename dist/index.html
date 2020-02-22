@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Przemysław Gałdys Frontend developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+
+</head>
+
+<body id="start">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expandet="false">
+					<span class="sr-only">Toggle navigation</span>
+                   	<span class="icon-bar"></span>
+                   	<span class="icon-bar"></span>
+                   	<span class="icon-bar"></span>
+				</button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav nav navbar-right">
+                    <li class="active"><a href="#start">Home</a></li>
+                    <li><a href="#oMnie">O mnie</a></li>
+                    <li><a href="#coRobie">Co robię</a></li>
+                    <li><a href="#projekty">Moje projekty</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="jumbotron jumbotron-fluid text-center" id="jumbotron">
+        <div class="container">
+            <h1>Junior Web Developer</h1>
+            <a href="#projekty"><button class="btn btn-lg watch">Zobacz moje prace</button></a>
+        </div>
+    </section>
+    <section id="oMnie" class="aboutme">
+        <h2>O <span>mnie</span></h2>
+        <div class="container">
+            <div class="me row">
+                <div class="col-md-6 col-sm-12">
+                    <img class="img-responsive" src="src/assets/myphoto.jpg">
+                </div>
+                <div class="about col-md-6 col-sm-12">
+                    <h3 class="about__h">Cześć! Mam na imię Przemek,</h3>
+                    <p class="about__p">jestem świeżo upieczonym Junior Frontend Developerem. Ukończyłem duże, profesjonalne szkolenie z Web Developmentu w szkole programowania Kodilla. Nauczyłem się tam tworzenia od podstaw stron internetowych oraz prostych aplikacji.  Obecnie skupiam się na doskonaleniu zdobytych umiejętności koderskich, a w przyszłości planuję rozszerzyć wiedzę o nowe technologie. Podczas pracy nad moimi projektami wymagam od siebie, aby tworzone storny były fuknjonalne, estetyczne oraz nowoczesne.</p>
+                    <p class="about__p">Poniżej możesz znaleźć więcej informacji na mój temat, a także projekty, którymi zajmowałem się dotychczas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="coRobie" class="whatdo">
+        <h2>Co <span>robię</span></h2>
+        <div class="container text-center">
+            <div class="whatdo__grid row">
+                <div class="whatdo__cell col-md-4">
+                    <div class="cell__content">
+                        <img class="cell__img" src="src/assets/browser.png">
+                        <h5 class="cell__h5">Tworzenie kodu</h5>
+                        <p class="cell__p">Pisanie ston internetowych z wykorzystaniem aktualnych technologii webowych zgodnie z obowiązującymi standardami oraz potrzebami.</p>
+                    </div>
+                </div>
+                <div class="whatdo__cell col-md-4">
+                    <div class="cell__content">
+                        <img class="cell__img" src="src/assets/responsive-design-symbol.png">
+                        <h5 class="cell__h5">Responsive Web Design</h5>
+                        <p class="cell__p">Podczas tworzenia szczególną uwagę zwracam na to aby strona doskonale wyglądała zarówno na monitorach ekranowych jak i ekranach tabletów oraz smartfonów.</p>
+                    </div>
+                </div>
+                <div class="whatdo__cell col-md-4">
+                    <div class="cell__content">
+                        <img class="cell__img" src="src/assets/light-bulb.png">
+                        <h5 class="cell__h5">Technologie</h5>
+                        <p class="cell__p">W swoich pracach korzystam między innymi z HTML5, CSS3, Sass, Bootstrap czy JavaScript. Poznałem także podstawy React, Redux, ES6, Express, MongoDB czy MERN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projekty" class="works text-center">
+        <h2>Moje <span>projekty</span></h2>
+        <div class="works__grid">
+            <div class="works__cell col-md-3 col-sm-8">
+                <img class="works__img img-responsive" src="src/assets/activebox.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">ActiveBOX</h5>
+                    <p class="works__p">Projekt strony wykonany przy użyciu HTML5, CSS3, Bootstrap, Flexbox, Sass, JavaScript</p>
+                    <a href="https://przemekg89.github.io/Project-page/" target="_blank"><button class="btn btn-large">LIVE</button></button></a>
+                </div>
+            </div>
+            <div class="works__cell col-md-3 col-sm-8">
+                <img class="works__img img-responsive" src="src/assets/game.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">StonePaperScissors Game</h5>
+                    <p class="works__p">Gra w kamień papier nożyce wykonana za pomocą HTML5, CSS3, Bootstrap, Sass, JavaScript</p>
+                    <a href="https://przemekg89.github.io/Zadanie-9.7/" target="_blank"><button class="btn btn-large">LIVE</button></button></a>
+                </div>
+            </div>
+            <div class="works__cell col-md-3 col-sm-8">
+                <img class="works__img img-responsive" src="src/assets/simplephoto.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">Simple photo Project-page</h5>
+                    <p class="works__p">Projekt strony wykonany za pomocą HTML5, CSS3, Bootstrap, Sass, JavaScript</p>
+                    <a href="https://przemekg89.github.io/Simple-photo/" target="_blank"><button class="btn btn-large">LIVE</button></button></a>
+                </div>
+            </div>
+            <div class="works__cell col-md-3 col-sm-8">
+                <img class="works__img img-responsive" src="src/assets/design.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">Design Lab Project-page</h5>
+                    <p class="works__p">Projekt strony wykonany za pomocą HTML5, CSS3, Bootstrap, Sass</p>
+                    <a href="https://przemekg89.github.io/Design-Lab/" target="_blank">
+                        <button class="btn btn-large">LIVE</button>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="works__cell col-md-3 col-sm-8">
+                <img class="works__img img-responsive" src="src/assets/golden.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">GoldenPage</h5>
+                    <p class="works__p">Projekt strony wykonany przy użyciu HTML5, CSS3, Bootstrap, Flexbox, Sass, JavaScript</p>
+                    <a href="https://przemekg89.github.io/Golden-Page/" target="_blank">
+                        <button class="btn btn-large">LIVE</button>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="works__cell col-md-3 col-sm-8">
+                <img class="works__img img-responsive" src="src/assets/awax.png">
+                <div class="works__div--hover">
+                    <h5 class="works__h5">AWAX</h5>
+                    <p class="works__p">Projekt strony wykonany przy użyciu HTML5, CSS3, Bootstrap, Flexbox, Sass, JavaScript</p>
+                    <a href="https://przemekg89.github.io/AWAX-Page/" target="_blank">
+                        <button class="btn btn-large">LIVE</button>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sentence text-center">
+        <div class="container">
+            <div class="carousel slide row" data-ride="carousel">
+                <div class="carousel-inner col-md-6 col-sm-12">
+                    <div class="sentence__item item active">
+                        <img class="sentence__img" src="src/assets/quote-circular-button.png">
+                        <p class="sentence__p">Mierzenie postępu programowania liniami kodu jest jak mierzenie postępu budowy samolotu za pomocą ciężaru.</p>
+                        <h5>- Bill Gates</h5>
+                    </div>
+                    <div class="sentence__item item">
+                        <img class="sentence__img" src="src/assets/quote-circular-button.png">
+                        <p class="sentence__p">W teorii, teoria i praktyka są tym samym. W praktyce, nie są.</p>
+                        <h5>- Yogi Berra</h5>
+                    </div>
+                    <div class="sentence__item item">
+                        <img class="sentence__img" src="src/assets/quote-circular-button.png">
+                        <p class="sentence__p">Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą.</p>
+                        <h5>- Linus Torvalds</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt" class="contact container text-center">
+        <h2 class="contact_h">Kontakt <span>ze mną</span></h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 contact__cooperation">
+                <div>Jeżeli przedstawiona przeze mnie oferta jest dla Ciebie ciekawa i jesteś zainteresowany podjęciem ze mną współpracy, lub po prostu masz jakieś pytania, skontaktuj się ze mną. Razem dobierzemy rozwiązania, które sprostają Twoim potrzebom.
+                </div>
+                <div class="contact__fa">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <p>667 646 999</p>
+                </div>
+                <div class="contact__fa">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>galdys.przemek@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 contact__form">
+                <div class="form">
+                    <div class="form-group">
+                        <input class="form-control name" type="text" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control email" type="email" placeholder="Email" aria-describedby="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control message" rows="5" placeholder="Message..."></textarea>
+                    </div>
+                </div>
+                <button class="btn form__btn">Wyślij wiadomość</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer__socjals">
+                <a class="footer__socjals-link" href="https://www.facebook.com/galdys.przemek" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="footer__socjals-link" href="https://www.linkedin.com/in/przemysław-gałdys" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a class="footer__socjals-link" href="https://github.com/PrzemekG89" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <p class="footer__copy">2017 <i class="fa fa-copyright" aria-hidden="true"></i> Przemysław Gałdys</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="src/scripts.js"></script>
+</body>
+
+</html>
